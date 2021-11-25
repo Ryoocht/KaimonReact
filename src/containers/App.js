@@ -1,10 +1,11 @@
 import '../style/App.css';
+import Typography from "@material-ui/core/Typography"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Kaimon</h1>
+        <Typography variant="h1">Kaimon</Typography>
         <hr/>
       </header>
     </div>
