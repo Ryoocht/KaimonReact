@@ -1,5 +1,6 @@
 import '../style/App.css';
-import Typography from "@material-ui/core/Typography"
+import Typography from "@mui/material/Typography"
+import TopPage from "./store/TopPage"
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         <Typography variant="h1">Kaimon</Typography>
         <hr/>
+        <TopPage />
       </header>
     </div>
   );
