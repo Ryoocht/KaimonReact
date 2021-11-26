@@ -7,7 +7,7 @@ const api_url = "http://localhost:3001/api/v1/stores"
 
 const StoreList = () => {
 
-    const [ stores, setStores ] = useState();
+    const [ stores, setStores ] = useState([]);
 
     useEffect(() => {
         fetch(api_url)
@@ -17,8 +17,8 @@ const StoreList = () => {
     }, [])
 
     return(
-        <ImageList sx={{width: 500, height: 450}}>
-            {/* {stores.map(store => (
+        <ImageList sx={{width: 600, height: 600}}>
+            {stores.map(store => 
                 <ImageListItem key={store.id}>
                     <img 
                         src={`${store.top_image}?w=248&fit=crop&auto=format`}
@@ -32,7 +32,7 @@ const StoreList = () => {
                         position="below"
                     />
                 </ImageListItem>
-            ))} */}
+            )}
         </ImageList>
     );
 }

@@ -1,16 +1,14 @@
 import '../style/App.css';
-import Typography from "@mui/material/Typography"
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import TopPage from "./store/TopPage"
+import StorePage from './store/StorePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Typography variant="h1">Kaimon</Typography>
-        <hr/>
-        <TopPage />
-      </header>
-    </div>
+    <Router basename="/kaimon">
+        <Route exact path="/" component={TopPage} />
+        <Route exact path="/stores" component={StorePage}/>
+    </Router>
   );
 }
 
