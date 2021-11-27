@@ -5,6 +5,8 @@ import StoreProducts from "../../components/store/StoreProducts";
 
 const StorePage = () => {
 
+    // declare fetch and store into state and pass them to Store title and Store Products components
+
     return(
         <div>
             <TitleLogin />
