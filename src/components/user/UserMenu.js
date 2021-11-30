@@ -1,8 +1,8 @@
 import React from "react";
 
-const AdminMenu = () => {
+const UserMenu = () => {
     return(
-        <div className="admin-menu">
+        <div className="user-menu">
             <ul>
                 <li>Admin Name</li>
                 <li>Profile Information</li>
@@ -12,4 +12,4 @@ const AdminMenu = () => {
     );
 }
 
-export default AdminMenu;
+export default UserMenu;

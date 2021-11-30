@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import TopPage from "./store/TopPage"
 import StorePage from './store/StorePage';
 import ProductPage from './store/ProductPage';
-import AdminPage from './store/AdminPage';
+import AdminPage from '../containers/admin/AdminPage';
+import UserPage from './user/UserPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route exact path="/store" component={StorePage} />
         <Route exact path="/product" component={ProductPage} />
         <Route exact path="/admin" component={AdminPage} />
+        <Route exact path="/user" component={UserPage} />
     </Router>
   );
 }

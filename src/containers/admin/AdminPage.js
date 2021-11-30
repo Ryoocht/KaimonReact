@@ -1,14 +1,14 @@
 import React from "react";
 import AdminLogout from "../../components/admin/AdminLogout";
 import AdminMenu from "../../components/admin/AdminMenu";
-import AdminStoreList from "../../components/admin/AdminStoreList";
+import AdminDetails from "../../components/admin/AdminDetails";
 
 const AdminPage = () => {
     return(
         <div>
             <AdminLogout />
             <AdminMenu />
-            <AdminStoreList />
+            <AdminDetails />
         </div>
     )
 }
