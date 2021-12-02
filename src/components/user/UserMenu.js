@@ -4,9 +4,9 @@ const UserMenu = () => {
     return(
         <div className="user-menu">
             <ul>
-                <li>Admin Name</li>
-                <li>Profile Information</li>
-                <li>Store Information</li>
+                <li>Overview</li>
+                <li>Address</li>
+                <li>Pay Method</li>
             </ul>
         </div>
     );
