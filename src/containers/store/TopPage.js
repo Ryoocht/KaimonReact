@@ -1,7 +1,7 @@
 import React from "react";
 import TitleLogin from "../../components/store/TitleLogin";
 import StoreList from "../../components/store/StoreList";
-import AdminLink from "../../components/store/AdminLink";
+import AdminLink from "../../components/admin/AdminLink";
 
 const TopPage = () => {
 
