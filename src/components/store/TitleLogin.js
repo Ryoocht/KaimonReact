@@ -34,7 +34,7 @@ const TitleLogin = () => {
                     <img className="top-img" src={TopImage} alt="top-img"></img>
                 </div>
             </div>
-            <hr/>
+            <hr className="top-hr"/>
         </div>
     );
 }

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
+.top-page-background {
+    background: #eec2c2;
+}
+
 .top-title-container {
     position: relative;
     width: 100%;
@@ -15,6 +19,11 @@
     float: left;
     width: 50%;
     height: 500px;
+}
+
+.top-hr {
+    margin: 0;
+    border-top: 4px solid #d7acd4;
 }
 
 /* Kaimon Logo */
@@ -168,7 +177,8 @@
 
 /* Store List */
 .list-title {
-    margin: 15px 15px 15px 60px;
+    margin: 0 15px 15px 60px;
+    padding-top: 20px;
     font-size: 40px;
 }
 
@@ -206,7 +216,7 @@
     margin: 50px auto;
     width: 70%;
     text-align: center;
-    box-shadow: 2px 7px 7px 2px #e7eaf6;
+    box-shadow: 1px 4px 4px 5px #e7eaf6;
 }
 
 .links {

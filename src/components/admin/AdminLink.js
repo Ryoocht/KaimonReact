@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/store/TopPage.css";
 import { Link } from "react-router-dom";
 import AdminImg from "../../img/Opened-pana.svg";
 import AboutMeImg from "../../img/About us page-pana.svg";
