@@ -165,3 +165,62 @@
 .partner-title {
     font-size: 30px;
 }
+
+/* Store List */
+.list-title {
+    margin: 15px 15px 15px 60px;
+    font-size: 40px;
+}
+
+.store-list {
+    display: grid;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 280px;
+}
+
+.store-link-container {
+    text-align: center;
+    text-decoration: none;
+}
+
+.store-top-img {
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+}
+
+.store-name {
+    margin: 0;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 25px;
+    color: black;
+}
+
+/* Links */
+
+.links-container {
+    margin: 50px auto;
+    width: 70%;
+    text-align: center;
+    box-shadow: 2px 7px 7px 2px #e7eaf6;
+}
+
+.links {
+    margin: 0 60px 20px 60px;
+    display: inline-block;
+}
+
+.link-title {
+    margin: 0;
+    font-size: 30px;
+}
+
+.link-text {
+    text-decoration: none;
+    font-size: 20px;
+    color: #e8630a;
+}

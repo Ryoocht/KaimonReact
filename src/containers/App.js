@@ -11,7 +11,7 @@ function App() {
   return (
     <Router basename="/kaimon">
         <Route exact path="/" component={TopPage} />
-        <Route exact path="/store" component={StorePage} />
+        <Route path="/store/" component={StorePage} />
         <Route exact path="/product" component={ProductPage} />
         <Route exact path="/admin" component={AdminPage} />
         <Route exact path="/user" component={UserPage} />

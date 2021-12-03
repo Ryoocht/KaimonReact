@@ -107,7 +107,7 @@ const StoreSearch = () => {
             setInputValue(newInputValue);
           }}
           renderInput={(params) => (
-            <TextField {...params} label="Add a location" fullWidth />
+            <TextField {...params} label="Enter Your Address" fullWidth />
           )}
           renderOption={(props, option) => {
             const matches = option.structured_formatting.main_text_matched_substrings;

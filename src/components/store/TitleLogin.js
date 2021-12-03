@@ -12,9 +12,9 @@ const TitleLogin = () => {
             <div className="top-title-container">
                 <div className="top-title-left">
                     <div className="kaimon-logo">
-                        <div class="wrapper"></div>
+                        <div className="wrapper"></div>
                         <Typography variant="h1" className="kaimon-text">Kaimon</Typography>
-                        <img className="logo-back" src={LogoBack}></img>
+                        <img className="logo-back" src={LogoBack} alt="logo-back"></img>
                         <Typography variant="h1" className="kaimon-text-top">Kaimon</Typography>
                     </div>
                     <div className="catch-copy">
@@ -31,12 +31,12 @@ const TitleLogin = () => {
                             <Button variant="contained">Sign up</Button>
                         </Stack>
                     </div>
-                    <img className="top-img" src={TopImage}></img>
+                    <img className="top-img" src={TopImage} alt="top-img"></img>
                 </div>
             </div>
             <hr/>
         </div>
-    )
+    );
 }
 
 export default TitleLogin;
