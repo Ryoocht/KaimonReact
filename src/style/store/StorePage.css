@@ -1,22 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+/* User Navigation */
+.user-nav-container{
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.menu-bar {
+    margin: 10px 0 0 25px ;
+    width: 25px;
+}
+
+.brand-title {
+    display: inline-block;
+    margin: 0 60px;
+    padding-top: 5px;
+    width: 160px;
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.cart-icon {
+    float: right;
+    margin: 9px 5px 0 0;
+    width: 36px;
+    height: 36px;
+}
+
+.cart-quantity {
+    float: right;
+    margin: 18px 20px 0 0;
+    font-size: 23px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.user-loggedin-sign {
+    float: right;
+    margin: 5px 70px 5px 10px;
+    padding: 3px;
+    font-size: 26px;
+    background: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-login-button {
+    float: right;
+    margin: 5px 70px 5px 10px;
+    padding: 3px;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #eb6100;
+    border-bottom: 5px solid #b84c00;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.user-login-button:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+.user-nav-hr {
+    margin-top: 0;
+    width: 90%;
+}
 
 /* Cart */
 .cart-container {
     position: sticky;
     top: 0;
     float: right;
-    width: 20%;
+    width: 19%;
     height: 99vh;
-    background: green;
+    z-index: 10;
+    text-align: center;
+    border-left: 1px solid #a7bcb9;
+    background: #ececec;
+}
+
+.number-of-items {
+    font-size: 18px;
+}
+
+.delete-icon {
+    position: absolute;
+    right: -4%;
+    top: -4%;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.item-container {
+    width: 88%;
+    height: 80px;
+    margin: 10px auto;
+    position: relative;
+    box-shadow: 2px 4px 3px #9ba6a5;
+}
+
+.cart-cart-left {
+    width: 35%;
+    float: left;
+    margin-top: 10px;
+}
+
+.cart-cart-right {
+    width: 65%;
+    float: right;
+    margin-top: 10px;
+}
+
+.cart-product-img {
+    width: 70px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cart-product-title {
+    display: inline-block;
+    margin: 0;
+    width: 140px;
+}
+
+.cart-price, .cart-qty {
+    display: inline-block;
+    margin: 5px 5px;
+    font-size: 17px;
+}
+
+.cart-hr {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.subtotal-container {
+    width: 100%;
+}
+
+.subtotal-title, .subtotal-result {
+    width: 50%;
+    display: inline-block;
+}
+
+.subtotal-result {
+    font-size: 25px;
 }
 
 /* Store Title */
 .store-title-container {
     position: relative;
     width: 80%;
+    min-width: none;
     height: 500px;
-    background: red;
 }
 
 .sub-image {
@@ -33,6 +175,7 @@
     width: 150px;
     height: 150px;
     border-radius: 10px 100px / 120px;
+    box-shadow: 2px 4px 2px #393e46;
 }
 
 .store-title {
@@ -43,6 +186,12 @@
 }
 
 /* Store Products */
+
+.product-list-title {
+    width: 40%;
+    margin: 10px 0 10px 40px;
+    font-size: 30px;
+}
 
 .store-products {
     width: 80%;
@@ -61,6 +210,7 @@
 .product-image {
     width: 100%;
     height: 160px;
+    cursor: pointer;
 }
 
 .product-name, .product-price {
@@ -70,21 +220,33 @@
 .product-name {
     float: left;
     width: 75%;
-    height: 20%;
+    height: 15%;
+    cursor: pointer;
 }
 
 .basket-icon {
+    margin-right: 10px;
     float: right;
     display: inline;
-    width: 17%;
-    height: 17%;
-    background: #d9dad7;
-    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .product-price {
-    clear: both;
-    font-size: 24px;
-    float: right;
+    display: inline-block;
+    font-size: 22px;
     margin-right: 20px;
+}
+
+.quantity {
+    float: right;
+    height: 30px;
+}
+
+.qty-input {
+    margin: 0;
+     width: 35px;
+     height: 80%;
 }
