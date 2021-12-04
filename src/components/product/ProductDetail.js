@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 
-const api_url = "http://localhost:3001/api/v1/stores/1/products/1"
+const api_url = "http://localhost:3001/api/v1/stores/";
 
 const ProductDetail = () => {
 
     const [ productDetail, setProductDetail ] = useState([]);
+    const storeId = useLocation().pathname.split("/")[2];
+    const productId = useLocation().pathname.split("/")[4];
 
     useEffect(() => {
-        fetch(api_url)
+        fetch(`${api_url}${storeId}/products/${productId}`)
         .then(resp => resp.json())
         .then(productData => setProductDetail([productData]))
         .catch(error => console.log(error));

@@ -1,12 +1,14 @@
 import React from "react";
-import TitleLogin from "../../components/store/TitleLogin";
+import UserNav from "../../components/nav/UserNav";
 import ProductDetail from "../../components/product/ProductDetail";
+import Comment from "../../components/product/Comment";
 
 const ProductPage = () => {
     return(
         <div>
-            <TitleLogin />
+            <UserNav />
             <ProductDetail />
+            <Comment />
         </div>
     )
 }

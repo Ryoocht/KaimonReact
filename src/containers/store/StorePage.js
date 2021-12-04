@@ -4,13 +4,14 @@ import UserNav from "../../components/nav/UserNav";
 import ProductCart from "../../components/cart/ProductCart";
 import StoreTitle from "../../components/store/StoreTitle";
 import StoreProducts from "../../components/store/StoreProducts";
+import { useLocation } from "react-router";
 
 const api_url = "http://localhost:3001/api/v1/stores/"
 
-const StorePage = props => {
+const StorePage = () => {
 
     const [ storeData, setStoreData ] = useState([]);
-    const storeId = props.location.pathname.split("/")[2];
+    const storeId = useLocation().pathname.split("/")[2];
 
     useEffect(() => {
         fetch(`${api_url}${storeId}`)
@@ -28,7 +29,7 @@ const StorePage = props => {
                 <UserNav />
                 <ProductCart />
                 <StoreTitle images={storeImages} />
-                <StoreProducts products={storeProducts} />
+                <StoreProducts products={storeProducts} storeId={storeId}/>
             </div>
         )
     } else {
